@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="dashboard"><!-- Dashboard -->
+        <section class="navigation"><!-- Navigation -->
+            <img src="assets/img/logo-thumbnail.png" alt="InstinctHub Logo">
+
+            <div>
+                <span class="material-icons-outlined"> dashboard </span>
+                <span class="material-icons-outlined"> trending_up </span>
+                <span class="material-icons-outlined"> people_alt </span>
+                <span class="material-icons-outlined"> insert_invitation </span>
+                <span class="material-icons-outlined">settings_suggest</span>
+            </div>
+
+        </section><!-- Navigation End -->
+
+        <section class="main"><!-- Main -->
+            <div class="search"><!-- Search -->
+                <form action="#">
+                    <input type="text" name="search" id="searchInput" placeholder="Search Here">
+                    <span class="material-icons-outlined"> search </span>
+                </form>
+                <div class="notification">
+                    <span class="material-icons-outlined">notifications_none</span>
+                    <span class="material-icons-outlined">edit</span>
+                </div>
+            </div><!-- Search End -->
+
+            <div class="title"><!-- Title -->
+                <h1>My Projects</h1>
+                <form action="#">
+                    <label for="projects">Sort By</label>
+                    <select id="projects" name="projects">
+                      <option value="recent">Recent Project</option>
+                      <option value="finished">Finished Project</option>
+                      <option value="ongoing">Ongoing Project</option>
+                      <option value="stalled">Stalled Project</option>
+                    </select>
+                  </form>
+            </div><!-- Title End -->
+
+            <div class="projects"><!-- Projects -->
+                
+            </div><!-- Projects End -->
+
+        </section><!-- Main End -->
+
+        <section class="secondary"><!-- Secondary -->
+
+        </section><!-- Secondary End -->
+
+    </div><!-- Dashboard End-->
+    
+</body>
+</html>
