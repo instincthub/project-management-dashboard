@@ -7,3 +7,4 @@ This lesson shows how to create a reusable and customisable dashboard with HTML,
 ## Helpful Links
 - [Google Icons](https://fonts.google.com/icons)
 - [Material Icons Guide](https://developers.google.com/fonts/docs/material_icons)
+- [HTML <option> value Attribute](https://www.w3schools.com/tags/att_option_value.asp)
