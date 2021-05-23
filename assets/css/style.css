@@ -92,3 +92,51 @@ Main Dashboard
     font-size: 16px;
     background-color: rgba(0 0 0 / 0);
 }
+
+/* Project List */
+.dashboard .main .project_list .project h2{
+    font-size: 20px;
+    line-height: 0px;
+}
+.dashboard .main .project_list .project p{
+    color: #727272;
+}
+.dashboard .main .project_list .project ul{
+    list-style: none;
+    position: relative;
+    margin-left: 0;
+    padding-left: 0;
+    
+}
+.dashboard .main .project_list .project ul li{
+    position: relative;
+    color: #727272;
+    margin-left: 15px;
+}
+.dashboard .main .project_list .project ul li::before{
+    content: "\268A";
+    position: absolute;
+    left: -15px;
+    top: -5px;
+}
+.dashboard .main .project_list .project .meta img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    border: 4px solid #fff;
+}
+.dashboard .main .project_list .project .meta img.stack{
+    margin-left: -20px;
+}
+.dashboard .main .project_list .project .meta{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.dashboard .main .project_list .project{
+    padding: 20px 20px 20px 60px;
+    background-color: #fff;
+    box-shadow: 1px 1px 40px rgba(0 0 0 / .01);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
