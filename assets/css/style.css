@@ -140,3 +140,34 @@ Main Dashboard
     margin-bottom: 20px;
     border-radius: 10px;
 }
+
+/* =========================
+Secondary Statistics
+============================ */
+/* Chart */
+.dashboard .secondary .chart .complete{
+    text-align: center;
+    margin: 40px 0;
+}
+.dashboard .secondary .chart .complete h3{
+    line-height: 0px;
+}
+.dashboard .secondary .chart .complete p{
+    color: #727272;
+}
+
+/* Recent Projects */
+.dashboard .secondary .recent_project .listing h2{
+    line-height: 0px;  
+}
+.dashboard .secondary .recent_project .listing p{
+    color: #727272; 
+}
+.dashboard .secondary .recent_project .listing{
+    display: flex;
+    justify-content: space-between;
+}
+.dashboard .secondary .recent_project{
+    background-color: #fff;
+    padding: 15px 15px 15px 50px;
+}
