@@ -139,6 +139,27 @@ Main Dashboard
     box-shadow: 1px 1px 40px rgba(0 0 0 / .01);
     margin-bottom: 20px;
     border-radius: 10px;
+    position: relative;
+}
+.dashboard .main .project_list .category{
+    width: 30px;
+    height: 50px;
+    background-color: rebeccapurple;
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    left: 0px;
+}
+.category_color1{
+    background-color:tan !important;
+}
+.category_color2{
+    background-color:rebeccapurple !important;
+}
+.category_color3{
+    background-color: sandybrown !important;
+}
+.category_color3{
+    background-color: lightcyan !important;
 }
 
 /* =========================
@@ -170,4 +191,13 @@ Secondary Statistics
 .dashboard .secondary .recent_project{
     background-color: #fff;
     padding: 15px 15px 15px 50px;
+    position: relative;
+}
+.dashboard .secondary .recent_project .category{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    position: absolute;
+    left: 10px;
+    margin-top: 20px;
 }
