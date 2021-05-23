@@ -42,3 +42,53 @@ Navigation
 .dashboard .navigation div{
     margin-top: 10px;
 }
+
+/* =========================
+Main Dashboard
+============================ */
+/* Search */
+.dashboard .main .search form{
+    margin-top: 50px;
+    position: relative;
+}
+.dashboard .main .search form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 10px 60px;
+    border: 1px solid #dadada;
+    background-color: rgba(0 0 0 / 0);
+}
+.dashboard .main .search form span{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #727272;
+}
+.dashboard .main .search .notification{
+    margin-top: 20px;
+}
+.dashboard .main .search .notification span:nth-child(1){
+    margin-right: 15px;
+}
+
+/* My Project */
+.dashboard .main .title{
+    margin-bottom: 30px;
+}
+.dashboard .main .title h1{
+    font-size: 35px;
+    line-height: 0;
+}
+.dashboard .main .title form{
+    margin-top: 40px;
+}
+.dashboard .main .title form label{
+    margin-right: 15px;
+    color: #727272;
+    font-size: 16px;
+}
+.dashboard .main .title form select{
+    border: none;
+    font-size: 16px;
+    background-color: rgba(0 0 0 / 0);
+}
