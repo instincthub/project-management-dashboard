@@ -10,3 +10,4 @@ This lesson shows how to create a reusable and customisable dashboard with HTML,
 - [HTML <option> value Attribute](https://www.w3schools.com/tags/att_option_value.asp)
 - [Chart.js](https://www.chartjs.org/docs/latest/)
 - [chart.js CDN](https://www.jsdelivr.com/package/npm/chart.js)
+- [Font - Nunito](https://fonts.google.com/specimen/Nunito?query=nuni)

@@ -1,24 +1,44 @@
-.material-icons-outlined {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-  
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
-    font-feature-settings: 'liga';
-  }
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.dashboard{
+    max-width: 1112px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* =========================
+Navigation
+============================ */
+.dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.dashboard .navigation img.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.dashboard .navigation img.user{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.dashboard .navigation div .material-icons-outlined{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    color: #727272;
+}
+.dashboard .navigation div{
+    margin-top: 10px;
+}
