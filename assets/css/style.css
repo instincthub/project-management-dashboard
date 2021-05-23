@@ -9,7 +9,6 @@ body{
 }
 
 .dashboard{
-    max-width: 1112px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -200,4 +199,48 @@ Secondary Statistics
     position: absolute;
     left: 10px;
     margin-top: 20px;
+}
+
+/* =========================
+Media Queries
+============================ */
+@media only screen and (min-width: 768px){
+    .dashboard .main .search form input{
+        width: 400px;
+    }
+    .dashboard .main .search{
+        display: flex;
+        justify-content: space-between;
+    }
+    .dashboard .main .search .notification{
+        padding-top: 40px !important;
+    }
+    .dashboard .main .title{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0px;
+    }
+    .dashboard .main .title form{
+        margin-top: 10px;
+    }
+    .dashboard .main .project_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .dashboard .main .project_list .project{
+        width: 48%;
+    }
+    /* Secondary */
+    .dashboard .secondary{
+        display: flex;
+        justify-content: space-between;
+    }
+    .dashboard .secondary .chart canvas{
+        width: 300px;
+        height: 300px;
+    }
+    .dashboard .secondary .recent_project{
+        width: 300px;
+    }
 }
