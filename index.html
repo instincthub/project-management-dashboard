@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Management Dashboard</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/icon.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
 </head>
 <body>
     <div class="dashboard"><!-- Dashboard -->
         <section class="navigation"><!-- Navigation -->
-            <img src="assets/img/logo-thumbnail.png" alt="InstinctHub Logo" class="logo">
+            <img src="assets/img/logo-thumbnail.png" alt="InstinctHub Logo">
 
             <div>
                 <span class="material-icons-outlined"> dashboard </span>
@@ -24,8 +22,6 @@
                 <span class="material-icons-outlined"> insert_invitation </span>
                 <span class="material-icons-outlined">settings_suggest</span>
             </div>
-
-            <img src="assets/img/8.jpg" alt="" class="user">
 
         </section><!-- Navigation End -->
 
@@ -58,7 +54,7 @@
             <div class="project_list"><!-- Project List -->
 
                 <div class="project"><!-- Project1 -->
-                    <div class="category category_color1"></div>
+                    <div class="category"></div>
                     <h2>Graphic Design</h2>
                     <p>Active recently</p>
 
@@ -70,15 +66,15 @@
                     <div class="meta">
                         <div class="contributors">
                             <img src="assets/img/1.jpg" alt="">
-                            <img src="assets/img/2.jpg" alt="" class="stack">
-                            <img src="assets/img/3.jpg" alt="" class="stack">
+                            <img src="assets/img/2.jpg" alt="">
+                            <img src="assets/img/3.jpg" alt="">
                         </div>
                         <span class="material-icons-outlined">more_vert</span>
                     </div>
                 </div><!-- Project1 End -->
 
                 <div class="project"><!-- Project2 -->
-                    <div class="category category_color2"></div>
+                    <div class="category"></div>
                     <h2>Magazine</h2>
                     <p>1 hour ago</p>
 
@@ -89,14 +85,14 @@
                     <div class="meta">
                         <div class="contributors">
                             <img src="assets/img/4.jpg" alt="">
-                            <img src="assets/img/5.jpg" alt="" class="stack">
+                            <img src="assets/img/5.jpg" alt="">
                         </div>
                         <span class="material-icons-outlined">more_vert</span>
                     </div>
                 </div><!-- Project2 End -->
 
                 <div class="project"><!-- Project3 -->
-                    <div class="category category_color3"></div>
+                    <div class="category"></div>
                     <h2>Layouting</h2>
                     <p>1 day ago</p>
 
@@ -113,7 +109,7 @@
                 </div><!-- Project3 End -->
 
                 <div class="project"><!-- Project4 -->
-                    <div class="category category_color4"></div>
+                    <div class="category"></div>
                     <h2>Branding</h2>
                     <p>3 day ago</p>
 
@@ -130,7 +126,7 @@
                 </div><!-- Project4 End -->
 
                 <div class="project"><!-- Project5 -->
-                    <div class="category category_color1"></div>
+                    <div class="category"></div>
                     <h2>Guidelines</h2>
                     <p>5 day ago</p>
 
@@ -141,14 +137,14 @@
                     <div class="meta">
                         <div class="contributors">
                             <img src="assets/img/8.jpg" alt="">
-                            <img src="assets/img/2.jpg" alt="" class="stack">
+                            <img src="assets/img/2.jpg" alt="">
                         </div>
                         <span class="material-icons-outlined">more_vert</span>
                     </div>
                 </div><!-- Project5 End -->
 
                 <div class="project"><!-- Project6 -->
-                    <div class="category category_color4"></div>
+                    <div class="category"></div>
                     <h2>Photoshoot</h2>
                     <p>1 week ago</p>
 
@@ -159,8 +155,8 @@
                     <div class="meta">
                         <div class="contributors">
                             <img src="assets/img/5.jpg" alt="">
-                            <img src="assets/img/6.jpg" alt="" class="stack">
-                            <img src="assets/img/1.jpg" alt="" class="stack">
+                            <img src="assets/img/6.jpg" alt="">
+                            <img src="assets/img/1.jpg" alt="">
                         </div>
                         <span class="material-icons-outlined">more_vert</span>
                     </div>
@@ -171,40 +167,41 @@
         </section><!-- Main End -->
 
         <section class="secondary"><!-- Secondary -->
-
             <div class="chart">
                 <h2>Total Project</h2>
-                <canvas id="myChart"></canvas>
-                <div class="complete">
-                    <h3> 3 Complete</h3>
-                    <p>From 5 projects</p>
-                </div>
+                <canvas id="myChart" width="400" height="400"></canvas>
             </div>
 
             <div class="recent_project"><!-- Recent Project -->
                 <div class="listing">
                     <div class="title">
-                        <div class="category category_color1"></div>
+                        <div class="category"></div>
                         <h2>Layouting</h2>
                         <p>by Chidozie Kachukwu</p>
                     </div>
                     <span class="material-icons-outlined">more_vert</span>
                 </div>
-
                 <div class="listing">
                     <div class="title">
-                        <div class="category category_color2"></div>
+                        <div class="category"></div>
                         <h2>Photoshoot</h2>
                         <p>by Musa Ismail</p>
                     </div>
                     <span class="material-icons-outlined">more_vert</span>
                 </div>
-
                 <div class="listing">
                     <div class="title">
-                        <div class="category category_color2"></div>
+                        <div class="category"></div>
                         <h2>Branding</h2>
                         <p>by Ezekiel Arowolo</p>
+                    </div>
+                    <span class="material-icons-outlined">more_vert</span>
+                </div>
+                <div class="listing">
+                    <div class="title">
+                        <div class="category"></div>
+                        <h2>Graphics Design</h2>
+                        <p>by Matthew Kelechi</p>
                     </div>
                     <span class="material-icons-outlined">more_vert</span>
                 </div>
@@ -219,30 +216,22 @@
         var myChart = new Chart(ctx, {
             type: 'doughnut',
             data: {
-                labels: ['Complete', 'Ongoing', 'Stalled'],
+                labels: [
+                    'Completed',
+                    'Ongoing',
+                    'Stalled'
+                ],
                 datasets: [{
-                    label: '# of Votes',
-                    data: [12, 19, 3],
+                    label: 'My First Dataset',
+                    data: [300, 50, 100],
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+                    'rgb(255, 205, 86)'
                     ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                    ],
-                    borderWidth: 1
+                    hoverOffset: 4
                 }]
             },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
         });
         </script>
 </body>
