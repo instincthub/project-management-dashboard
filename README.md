@@ -12,3 +12,5 @@ This lesson shows how to create a reusable and customisable dashboard with HTML,
 - [chart.js CDN](https://www.jsdelivr.com/package/npm/chart.js)
 - [Font - Nunito](https://fonts.google.com/specimen/Nunito?query=nuni)
 - [Develop responsive web apps](https://responsively.app)
+
+![Project Preview](exploring-pg-dashboard-by-miranti.png "Project Management Dashboard By Miranti")

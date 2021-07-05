@@ -2,20 +2,18 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
-
 body{
-    margin: 0;
+    margin: 0px;
     background-color: aliceblue;
 }
-
 .dashboard{
-    padding: 0 15px;
+    padding: 0px 15px;
     margin: 0 auto;
 }
 
-/* =========================
+/* ==========================
 Navigation
-============================ */
+============================= */
 .dashboard .navigation{
     display: flex;
     justify-content: space-between;
@@ -42,9 +40,9 @@ Navigation
     margin-top: 10px;
 }
 
-/* =========================
+/* ==========================
 Main Dashboard
-============================ */
+============================= */
 /* Search */
 .dashboard .main .search form{
     margin-top: 50px;
@@ -55,13 +53,12 @@ Main Dashboard
     font-size: 16px;
     padding: 10px 10px 10px 60px;
     border: 1px solid #dadada;
-    background-color: rgba(0 0 0 / 0);
+    background-color: rgba( 0 0 0 / 0);
 }
 .dashboard .main .search form span{
     position: absolute;
     left: 15px;
-    top: 10px;
-    color: #727272;
+    top: 10px;color: #727272;
 }
 .dashboard .main .search .notification{
     margin-top: 20px;
@@ -76,7 +73,7 @@ Main Dashboard
 }
 .dashboard .main .title h1{
     font-size: 35px;
-    line-height: 0;
+    line-height: 0px;
 }
 .dashboard .main .title form{
     margin-top: 40px;
@@ -89,85 +86,84 @@ Main Dashboard
 .dashboard .main .title form select{
     border: none;
     font-size: 16px;
-    background-color: rgba(0 0 0 / 0);
+    background-color: rgba( 0 0 0 / 0);
 }
 
 /* Project List */
 .dashboard .main .project_list .project h2{
     font-size: 20px;
-    line-height: 0px;
+    line-height: 0;
 }
 .dashboard .main .project_list .project p{
     color: #727272;
 }
-.dashboard .main .project_list .project ul{
+.dashboard .main .project_list .project ul {
     list-style: none;
     position: relative;
-    margin-left: 0;
-    padding-left: 0;
-    
+    margin-left: 0px;
+    padding-left: 0px;
 }
-.dashboard .main .project_list .project ul li{
+.dashboard .main .project_list .project ul li {
     position: relative;
     color: #727272;
     margin-left: 15px;
 }
-.dashboard .main .project_list .project ul li::before{
+.dashboard .main .project_list .project ul li::before {
     content: "\268A";
     position: absolute;
     left: -15px;
     top: -5px;
 }
-.dashboard .main .project_list .project .meta img{
+.dashboard .main .project_list .project .meta img {
     width: 50px;
     height: 50px;
     border-radius: 40px;
-    border: 4px solid #fff;
+    border: 4px solid aliceblue;
 }
-.dashboard .main .project_list .project .meta img.stack{
+.dashboard .main .project_list .project .meta img.stack {
     margin-left: -20px;
 }
-.dashboard .main .project_list .project .meta{
+.dashboard .main .project_list .project .meta {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.dashboard .main .project_list .project{
+.dashboard .main .project_list .project {
     padding: 20px 20px 20px 60px;
     background-color: #fff;
-    box-shadow: 1px 1px 40px rgba(0 0 0 / .01);
+    box-shadow: 1px 1px 40px rgba( 0 0 0 / .01);
     margin-bottom: 20px;
     border-radius: 10px;
     position: relative;
 }
-.dashboard .main .project_list .category{
+.dashboard .main .project_list .category {
     width: 30px;
     height: 50px;
     background-color: rebeccapurple;
     border-radius: 0px 10px 10px 0px;
     position: absolute;
-    left: 0px;
+    left: 0;
 }
 .category_color1{
-    background-color:tan !important;
+    background-color: tan !important;
 }
 .category_color2{
-    background-color:rebeccapurple !important;
+    background-color: rebeccapurple !important;
 }
 .category_color3{
     background-color: sandybrown !important;
 }
-.category_color3{
+.category_color4{
     background-color: lightcyan !important;
 }
 
-/* =========================
-Secondary Statistics
-============================ */
+/* ==========================
+Secondary Statics
+============================= */
 /* Chart */
 .dashboard .secondary .chart .complete{
     text-align: center;
-    margin: 40px 0;
+    margin: 40px 0px;
 }
 .dashboard .secondary .chart .complete h3{
     line-height: 0px;
@@ -175,13 +171,19 @@ Secondary Statistics
 .dashboard .secondary .chart .complete p{
     color: #727272;
 }
+.dashboard .secondary .chart{
+    background-color: #fff;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 30px;
+}
 
 /* Recent Projects */
 .dashboard .secondary .recent_project .listing h2{
-    line-height: 0px;  
+    line-height: 0px;
 }
 .dashboard .secondary .recent_project .listing p{
-    color: #727272; 
+    color: #727272;
 }
 .dashboard .secondary .recent_project .listing{
     display: flex;
@@ -189,8 +191,9 @@ Secondary Statistics
 }
 .dashboard .secondary .recent_project{
     background-color: #fff;
-    padding: 15px 15px 15px 50px;
+    padding: 15px 15px 15px 60px;
     position: relative;
+    margin-bottom: 30px;
 }
 .dashboard .secondary .recent_project .category{
     width: 16px;
@@ -199,48 +202,4 @@ Secondary Statistics
     position: absolute;
     left: 10px;
     margin-top: 20px;
-}
-
-/* =========================
-Media Queries
-============================ */
-@media only screen and (min-width: 768px){
-    .dashboard .main .search form input{
-        width: 400px;
-    }
-    .dashboard .main .search{
-        display: flex;
-        justify-content: space-between;
-    }
-    .dashboard .main .search .notification{
-        padding-top: 40px !important;
-    }
-    .dashboard .main .title{
-        display: flex;
-        justify-content: space-between;
-        margin: 40px 0px;
-    }
-    .dashboard .main .title form{
-        margin-top: 10px;
-    }
-    .dashboard .main .project_list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .dashboard .main .project_list .project{
-        width: 48%;
-    }
-    /* Secondary */
-    .dashboard .secondary{
-        display: flex;
-        justify-content: space-between;
-    }
-    .dashboard .secondary .chart canvas{
-        width: 300px;
-        height: 300px;
-    }
-    .dashboard .secondary .recent_project{
-        width: 300px;
-    }
 }

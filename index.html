@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Management Dashboard</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icons.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
@@ -13,7 +16,7 @@
 <body>
     <div class="dashboard"><!-- Dashboard -->
         <section class="navigation"><!-- Navigation -->
-            <img src="assets/img/logo-thumbnail.png" alt="InstinctHub Logo">
+            <img src="assets/img/logo-thumbnail.png" alt="InstinctHub Logo" class="logo">
 
             <div>
                 <span class="material-icons-outlined"> dashboard </span>
@@ -22,6 +25,8 @@
                 <span class="material-icons-outlined"> insert_invitation </span>
                 <span class="material-icons-outlined">settings_suggest</span>
             </div>
+
+            <img src="assets/img/2.jpg" alt="User Image" class="user">
 
         </section><!-- Navigation End -->
 
@@ -54,7 +59,7 @@
             <div class="project_list"><!-- Project List -->
 
                 <div class="project"><!-- Project1 -->
-                    <div class="category"></div>
+                    <div class="category category_color1"></div>
                     <h2>Graphic Design</h2>
                     <p>Active recently</p>
 
@@ -66,8 +71,8 @@
                     <div class="meta">
                         <div class="contributors">
                             <img src="assets/img/1.jpg" alt="">
-                            <img src="assets/img/2.jpg" alt="">
-                            <img src="assets/img/3.jpg" alt="">
+                            <img src="assets/img/2.jpg" alt="" class="stack">
+                            <img src="assets/img/3.jpg" alt="" class="stack">
                         </div>
                         <span class="material-icons-outlined">more_vert</span>
                     </div>
@@ -85,14 +90,14 @@
                     <div class="meta">
                         <div class="contributors">
                             <img src="assets/img/4.jpg" alt="">
-                            <img src="assets/img/5.jpg" alt="">
+                            <img src="assets/img/5.jpg" alt="" class="stack">
                         </div>
                         <span class="material-icons-outlined">more_vert</span>
                     </div>
                 </div><!-- Project2 End -->
 
                 <div class="project"><!-- Project3 -->
-                    <div class="category"></div>
+                    <div class="category category_color3"></div>
                     <h2>Layouting</h2>
                     <p>1 day ago</p>
 
@@ -109,7 +114,7 @@
                 </div><!-- Project3 End -->
 
                 <div class="project"><!-- Project4 -->
-                    <div class="category"></div>
+                    <div class="category category_color4"></div>
                     <h2>Branding</h2>
                     <p>3 day ago</p>
 
@@ -137,14 +142,14 @@
                     <div class="meta">
                         <div class="contributors">
                             <img src="assets/img/8.jpg" alt="">
-                            <img src="assets/img/2.jpg" alt="">
+                            <img src="assets/img/2.jpg" alt="" class="stack">
                         </div>
                         <span class="material-icons-outlined">more_vert</span>
                     </div>
                 </div><!-- Project5 End -->
 
                 <div class="project"><!-- Project6 -->
-                    <div class="category"></div>
+                    <div class="category category_color3"></div>
                     <h2>Photoshoot</h2>
                     <p>1 week ago</p>
 
@@ -155,8 +160,8 @@
                     <div class="meta">
                         <div class="contributors">
                             <img src="assets/img/5.jpg" alt="">
-                            <img src="assets/img/6.jpg" alt="">
-                            <img src="assets/img/1.jpg" alt="">
+                            <img src="assets/img/6.jpg" alt="" class="stack">
+                            <img src="assets/img/1.jpg" alt="" class="stack">
                         </div>
                         <span class="material-icons-outlined">more_vert</span>
                     </div>
@@ -170,12 +175,17 @@
             <div class="chart">
                 <h2>Total Project</h2>
                 <canvas id="myChart" width="400" height="400"></canvas>
+
+                <div class="complete">
+                    <h3>3 Completed</h3>
+                    <p>from 5 projects</p>
+                </div>
             </div>
 
             <div class="recent_project"><!-- Recent Project -->
                 <div class="listing">
                     <div class="title">
-                        <div class="category"></div>
+                        <div class="category category_color1"></div>
                         <h2>Layouting</h2>
                         <p>by Chidozie Kachukwu</p>
                     </div>
@@ -183,7 +193,7 @@
                 </div>
                 <div class="listing">
                     <div class="title">
-                        <div class="category"></div>
+                        <div class="category category_color2"></div>
                         <h2>Photoshoot</h2>
                         <p>by Musa Ismail</p>
                     </div>
@@ -191,7 +201,7 @@
                 </div>
                 <div class="listing">
                     <div class="title">
-                        <div class="category"></div>
+                        <div class="category category_color3"></div>
                         <h2>Branding</h2>
                         <p>by Ezekiel Arowolo</p>
                     </div>
@@ -199,7 +209,7 @@
                 </div>
                 <div class="listing">
                     <div class="title">
-                        <div class="category"></div>
+                        <div class="category category_color4"></div>
                         <h2>Graphics Design</h2>
                         <p>by Matthew Kelechi</p>
                     </div>
