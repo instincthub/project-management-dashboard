@@ -203,3 +203,42 @@ Secondary Statics
     left: 10px;
     margin-top: 20px;
 }
+
+@media only screen and (min-width:768px){
+    /* Project Listing */
+    section.main .project_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    section.main .project_list .project{
+        width: 47%;
+    }
+    section.main .project_list .project span{
+        margin-top: 15px;
+    }
+
+    /* Recent Projects */
+    section.secondary{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: #fff;
+    }
+    section.secondary .chart{
+        width: 40%;
+    }
+    section.secondary .recent_project{
+        width: 55%;
+    }
+    section.secondary .recent_project .listing .title{
+        width: 80%;
+    }
+    section.secondary .recent_project .listing .title{
+        width: 80%;
+    }
+    section.secondary .recent_project .listing span{
+        margin-top: 15px;
+    }
+}
