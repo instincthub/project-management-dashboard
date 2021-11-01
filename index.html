@@ -32,10 +32,10 @@
 
         <section class="main"><!-- Main -->
             <div class="search"><!-- Search -->
-                <form action="">
-                    <input type="text" name="search" id="search" placeholder="Search Here">
+                <div class="input">
+                    <input type="text" name="search" id="searchEmployee" placeholder="Search Here">
                     <span class="material-icons-outlined"> search </span>
-                </form>
+                </div>
 
                 <div class="notification">
                     <span class="material-icons-outlined"> notifications </span>
@@ -45,20 +45,19 @@
 
             <div class="title">
                 <h1>My Project</h1>
-                <form action="#">
-                    <label for="projects">Sort By</label>
-                    <select name="projects" id="projects">
-                        <option value="recent">Recent Project</option>
-                        <option value="finished">Finished Project</option>
-                        <option value="ongoing">Ongoing Project</option>
-                        <option value="stalled">Stalled Project</option>
-                    </select>
-                </form>
+                <label for="projects">Sort By</label>
+                <select name="projects" id="projectFilter">
+                    <option value="">...</option>
+                    <option value="recent">Recent Project</option>
+                    <option value="finished">Finished Project</option>
+                    <option value="ongoing">Ongoing Project</option>
+                    <option value="stalled">Stalled Project</option>
+                </select>
             </div>
 
             <div class="project_list"><!-- Project List -->
 
-                <div class="project"><!-- Project1 -->
+                <div class="project" data-status="finished" title="Finished Project"><!-- Project1 -->
                     <div class="category category_color1"></div>
                     <h2>Graphic Design</h2>
                     <p>Active recently</p>
@@ -78,7 +77,7 @@
                     </div>
                 </div><!-- Project1 End -->
 
-                <div class="project"><!-- Project2 -->
+                <div class="project" data-status="ongoing" title="Ongoing Project"><!-- Project2 -->
                     <div class="category"></div>
                     <h2>Magazine</h2>
                     <p>1 hour ago</p>
@@ -96,7 +95,7 @@
                     </div>
                 </div><!-- Project2 End -->
 
-                <div class="project"><!-- Project3 -->
+                <div class="project" data-status="stalled" title="Stalled Project"><!-- Project3 -->
                     <div class="category category_color3"></div>
                     <h2>Layouting</h2>
                     <p>1 day ago</p>
@@ -113,7 +112,7 @@
                     </div>
                 </div><!-- Project3 End -->
 
-                <div class="project"><!-- Project4 -->
+                <div class="project" data-status="finished" title="Ongoing Project"><!-- Project4 -->
                     <div class="category category_color4"></div>
                     <h2>Branding</h2>
                     <p>3 day ago</p>
@@ -130,7 +129,7 @@
                     </div>
                 </div><!-- Project4 End -->
 
-                <div class="project"><!-- Project5 -->
+                <div class="project" data-status="ongoing" title="Ongoing Project"><!-- Project5 -->
                     <div class="category"></div>
                     <h2>Guidelines</h2>
                     <p>5 day ago</p>
@@ -148,7 +147,7 @@
                     </div>
                 </div><!-- Project5 End -->
 
-                <div class="project"><!-- Project6 -->
+                <div class="project" data-status="stalled" title="Stalled Project"><!-- Project6 -->
                     <div class="category category_color3"></div>
                     <h2>Photoshoot</h2>
                     <p>1 week ago</p>
@@ -220,29 +219,7 @@
         </section><!-- Secondary End -->
 
     </div><!-- Dashboard End-->
-    
-    <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-                labels: [
-                    'Completed',
-                    'Ongoing',
-                    'Stalled'
-                ],
-                datasets: [{
-                    label: 'My First Dataset',
-                    data: [300, 50, 100],
-                    backgroundColor: [
-                    'rgb(255, 99, 132)',
-                    'rgb(54, 162, 235)',
-                    'rgb(255, 205, 86)'
-                    ],
-                    hoverOffset: 4
-                }]
-            },
-        });
-        </script>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

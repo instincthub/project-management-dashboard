@@ -44,27 +44,39 @@ Navigation
 Main Dashboard
 ============================= */
 /* Search */
-.dashboard .main .search form{
+.dashboard .main .search div{
     margin-top: 50px;
     position: relative;
 }
-.dashboard .main .search form input{
+.dashboard .main .search div input{
     width: 100%;
     font-size: 16px;
     padding: 10px 10px 10px 60px;
     border: 1px solid #dadada;
     background-color: rgba( 0 0 0 / 0);
 }
-.dashboard .main .search form span{
+
+.dashboard .main .search div.input span{
     position: absolute;
     left: 15px;
     top: 10px;color: #727272;
 }
+
 .dashboard .main .search .notification{
     margin-top: 20px;
 }
 .dashboard .main .search .notification span:nth-child(1){
     margin-right: 15px;
+    position: relative;
+}
+.dashboard .main .search .notification span:nth-child(1)::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: sandybrown;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
 }
 
 /* My Project */
@@ -75,15 +87,15 @@ Main Dashboard
     font-size: 35px;
     line-height: 0px;
 }
-.dashboard .main .title form{
+.dashboard .main .title{
     margin-top: 40px;
 }
-.dashboard .main .title form label{
+.dashboard .main .title label{
     margin-right: 15px;
     color: #727272;
     font-size: 16px;
 }
-.dashboard .main .title form select{
+.dashboard .main .title select{
     border: none;
     font-size: 16px;
     background-color: rgba( 0 0 0 / 0);
@@ -205,6 +217,18 @@ Secondary Statics
 }
 
 @media only screen and (min-width:768px){
+    /* Dashboard Search */
+    .dashboard .main .search{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        margin-top: 70px;
+    }
+    .dashboard .main .search div{
+        margin-top: 10px;
+        
+    }
+
     /* Project Listing */
     section.main .project_list{
         display: flex;
@@ -224,7 +248,8 @@ Secondary Statics
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
-        background-color: #fff;
+        background-color: #ffffff;
+        padding-top: 70px;
     }
     section.secondary .chart{
         width: 40%;
@@ -232,13 +257,66 @@ Secondary Statics
     section.secondary .recent_project{
         width: 55%;
     }
-    section.secondary .recent_project .listing .title{
-        width: 80%;
-    }
-    section.secondary .recent_project .listing .title{
-        width: 80%;
-    }
     section.secondary .recent_project .listing span{
         margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .dashboard .navigation,
+    .dashboard .navigation div span,
+    section.secondary{
+        display: block;
+    }
+    .dashboard .navigation{
+        width: 90px;
+        position: fixed;
+        z-index: 10;
+    }
+    section.main{
+        width: 65%;
+        margin-left: 90px;
+        margin-right: 20px;
+    }
+    section.secondary{
+        width: 27%;
+        padding-top: 0px;
+        position: fixed;
+        top: 20px;
+        right: 0px;
+        background-color: transparent;
+    }
+    section.secondary .chart,
+    section.secondary .recent_project{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .dashboard .navigation div{
+        margin-bottom: 22vh;
+        margin-top: 22vh;
+    }
+    .dashboard .navigation div span{
+        margin-top: 5vh;
+    }
+    .dashboard .navigation img.logo{
+        margin-top: 5vh;
+    }
+}
+@media only screen and (min-width:1111px){
+    section.main .project_list .project {
+        width: 32%;
+    }
+    .dashboard .navigation img.logo{
+        margin-top: 0;
+    }
+    .dashboard .navigation div{
+        margin-bottom: 20vh;
+        margin-top: 20vh;
+    }
+    
+}
+@media only screen and (min-width:1500px){
+    section.secondary .recent_project .listing:nth-child(4) {
+        display: none;
     }
 }
