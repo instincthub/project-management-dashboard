@@ -1,6 +1,5 @@
 // Chart JS
 var ctx = document.getElementById('myChart').getContext('2d');
-
 var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
@@ -23,12 +22,11 @@ var myChart = new Chart(ctx, {
 });
 
 
-// Search project
+// Search Project
+const project = document.querySelectorAll('.project')
 
-const employee = document.querySelectorAll('.project')
-
-const displayEmployees = (values) =>{
-    employee.forEach(element =>{
+const displayProject = (values) =>{
+    project.forEach(element =>{
         element.style.display = "none"
         const title = element.querySelector('h2').innerHTML.toUpperCase();
         const status = element.dataset.status.toUpperCase();
@@ -37,20 +35,19 @@ const displayEmployees = (values) =>{
         if (title.includes(values)){
             element.style.display = "block"
         }
-        else if (values != 'RECENT' && status.includes(values)){
+        else if(values != 'RECENT' && status.includes(values)){
             element.style.display = "block"
         }
-        else if (values === 'RECENT' && recent.includes('HOUR') || recent.includes('RECENTLY')){
+        else if(values === 'RECENT' && recent.includes('HOUR') || recent.includes('RECENT')){
             element.style.display = "block"
         }
-        
     })
 }
 
-searchEmployee.addEventListener('input', (e) =>{
-    displayEmployees(e.target.value.toUpperCase())
+searchProject.addEventListener('input', (e) =>{
+    displayProject(e.target.value.toUpperCase())
 })
 
 projectFilter.addEventListener('input', (e) =>{
-    displayEmployees(e.target.value.toUpperCase())
+    displayProject(e.target.value.toUpperCase())
 })
